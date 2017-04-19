@@ -14,6 +14,7 @@
 
 ## usage:
 ```jsx
+import ReactLayoutTransformCenter from 'react-layout-transform-center';
   <div className="hello-react-layout-transform-center">
       <div className="box">
         <ReactLayoutTransformCenter>
