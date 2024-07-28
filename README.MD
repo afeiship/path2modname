@@ -15,12 +15,10 @@ npm install @jswork/path2modname
 ```js
 import path2modname from '@jswork/path2modname';
 
-// usage goes here.
-```
+const path = 'features.user-center.profile';
+const mod = path2modname(path);
 
-## types
-```ts
-/// <reference types="@jswork/path2modname/global.d.ts" />
+console.log(mod); // 'features.userCenterProfile'
 ```
 
 ## license
