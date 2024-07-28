@@ -1,6 +1,6 @@
 {
   "name": "@jswork/path2modname",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Path to module name.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",

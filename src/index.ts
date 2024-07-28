@@ -10,8 +10,8 @@ const camelize = (inStr: string): string => {
 const fn = (path: string): string => {
   let paths = path.split('.');
   const len = paths.length;
-  if (len <= 2) return paths.map(camelize).join('.');
-  paths = [path[0], paths.slice(1).join('-')];
+  if (len <= 2) return camelize(paths.join('-'));
+  paths = [paths[0], paths.slice(1).join('-')];
   return paths.map(camelize).join('.');
 };
 
