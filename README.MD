@@ -1,47 +1,39 @@
-# react-layout-transform-center
-> React component for layout transform center.
+# path2modname
+> Path to module name.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-## dependencies:
-+ https://github.com/afeiship/webkit-sassui-transform-center
-
-## properties:
-```javascript
-  static propTypes = {
-    className:PropTypes.string
-  };
+## installation
+```shell
+npm install @jswork/path2modname
 ```
 
-## usage:
-```jsx
-import ReactLayoutTransformCenter from 'react-layout-transform-center';
-  <div className="hello-react-layout-transform-center">
-      <div className="box">
-        <ReactLayoutTransformCenter>
-          CenterXY
-        </ReactLayoutTransformCenter>
-      </div>
+## usage
+```js
+import path2modname from '@jswork/path2modname';
 
-      <div className="box">
-        <ReactLayoutTransformCenter direction='x'>
-        CenterX
-        </ReactLayoutTransformCenter>
-      </div>
-
-
-      <div className="box">
-        <ReactLayoutTransformCenter direction='y'>
-        CenterY
-        </ReactLayoutTransformCenter>
-      </div>
-
-  </div>
+// usage goes here.
 ```
 
+## types
+```ts
+/// <reference types="@jswork/path2modname/global.d.ts" />
+```
 
+## license
+Code released under [the MIT license](https://github.com/afeiship/path2modname/blob/master/LICENSE.txt).
 
-## resource:
-+ http://www.cnblogs.com/Kummy/p/4966937.html
-+ https://github.com/steven5538/vue-button
-+ https://yarnpkg.com/en/docs/install
+[version-image]: https://img.shields.io/npm/v/@jswork/path2modname
+[version-url]: https://npmjs.org/package/@jswork/path2modname
 
+[license-image]: https://img.shields.io/npm/l/@jswork/path2modname
+[license-url]: https://github.com/afeiship/path2modname/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/path2modname
+[size-url]: https://github.com/afeiship/path2modname/blob/master/dist/index.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/path2modname
+[download-url]: https://www.npmjs.com/package/@jswork/path2modname
