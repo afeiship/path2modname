@@ -1,14 +1,17 @@
 // a-b => aB
 // a_b => aB
-// a-b-ef_gh
-const camelize = (str: string): string => {
-  return str.replace(/[_.-](\w|$)/g, function(_, x) {
-    return x.toUpperCase();
-  });
+// a-b-ef_gh => aB.efGh
+const camelCaseRE = /[-_]+(.)?/g;
+const camelize = (inStr: string): string => {
+  const str = (inStr || '').replace(camelCaseRE, (_, chr) => chr ? chr.toUpperCase() : '');
+  return str[0].toLowerCase() + str.slice(1);
 };
 
 const fn = (path: string): string => {
-  const paths = path.split('.');
+  let paths = path.split('.');
+  const len = paths.length;
+  if (len <= 2) return paths.map(camelize).join('.');
+  paths = [path[0], paths.slice(1).join('-')];
   return paths.map(camelize).join('.');
 };
 
