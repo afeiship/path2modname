@@ -15,10 +15,13 @@ npm install @jswork/path2modname
 ```js
 import path2modname from '@jswork/path2modname';
 
-const path = 'features.user-center.profile';
-const mod = path2modname(path);
+const path1 = 'features.user-center.profile';
+const path2 = 'features.profile';
+const path3 = 'features.user-center';
 
-console.log(mod); // 'features.userCenterProfile'
+console.log(path2modname(path1)); // 'features.userCenterProfile'
+console.log(path2modname(path2)); // 'features.profile'
+console.log(path2modname(path3)); // 'features.userCenter'
 ```
 
 ## license
